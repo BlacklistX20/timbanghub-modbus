@@ -4,4 +4,4 @@ COPY package*.json ./
 RUN npm install --production
 COPY . .
 # Jalankan file utama
-CMD ["node", "index.js"]
+CMD ["npm", "start"]

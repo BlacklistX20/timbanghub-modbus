@@ -1,9 +1,11 @@
 {
   "name": "timbanghub-modbus",
   "version": "1.0.0",
-  "description": "",
+  "description": "Modbus worker service untuk TimbangHub",
   "main": "modbusService.js",
   "scripts": {
+    "start": "node modbusService.js",
+    "dev": "nodemon modbusService.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,7 +13,11 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "modbus-serial": "^8.0.25",
     "mongoose": "^9.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }

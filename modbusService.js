@@ -102,7 +102,7 @@ const startPolling = async () => {
             await updateStatus(slaveId, "stopped", "Koneksi gateway terputus");
           }
           
-          setTimeout(pollLoop, 5000);
+          setTimeout(pollLoop, 1000);
           return; 
         }
       }

@@ -64,7 +64,7 @@ const readSlaveData = async (slaveId) => {
     const response = await client.readInputRegisters(REGISTER_ADDRESS, 1);
     const weightValue = response.data[0] / 100; 
 
-    if (weightValue > 40 && weightValue < 52) {
+    if (weightValue > 40 && weightValue < 55) {
         await Model.create({
             dateTime: getFormattedDate(),
             weight: weightValue
